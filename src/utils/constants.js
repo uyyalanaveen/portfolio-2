@@ -34,25 +34,14 @@ export const navItems = [
       icon: BsCodeSlash,
     },
     {
-      interest: "Web Development",
+      interest: "App Development",
       icon: BsCodeSlash,
     },
     {
-      interest: "Web Development",
+      interest: "IoT",
       icon: BsCodeSlash,
     },
-    {
-      interest: "Web Development",
-      icon: BsCodeSlash,
-    },
-    {
-      interest: "Web Development",
-      icon: BsCodeSlash,
-    },
-    {
-      interest: "Web Development",
-      icon: BsCodeSlash,
-    }
+    
     
   ];
 
@@ -113,4 +102,28 @@ export const navItems = [
       icon : FaPython,
       title : "Python"
     }
+  ]
+
+import gfinder from '../assets/gfinder.png'
+import portfolio from '../assets/portfolio.png'
+export const projects = [
+    {
+      title: "GFinderr",
+      img: gfinder,
+      Github_url: "https://github.com/uyyalanaveen/GFinderr",
+      Project_url: "https://g-finder.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
+    {
+      title: "GFinderr",
+      img: gfinder,
+      Github_url: "https://github.com/uyyalanaveen/GFinderr",
+      Project_url: "https://g-finder.vercel.app/",
+    },
+
   ]
