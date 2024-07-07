@@ -5,7 +5,7 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 const ProjectCard = ({ img, title,Github_url,Project_url}) => {
   return (
-    <motion.div className="border rounded-md w-[450px] h-[300px] border-emerald-50"
+    <motion.div className="border-[2px] rounded-md w-[450px] h-[300px] border-white shadow-lg overflow-hidden cursor-pointer"
       whileHover={{ scale: 1.1 }}>
       <img src={img} alt="" className="w-full h-[200px] object-cover" />
       <div className="p-4">

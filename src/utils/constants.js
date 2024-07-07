@@ -74,34 +74,6 @@ export const navItems = [
       icon : FaPython,
       title : "Python"
     },
-    {
-      icon : FaHtml5,
-      title : "Html5"
-    },
-    {
-      icon : FaCss3,
-      title : "Css"
-    },
-    {
-      icon : FaJs,
-      title : "Java script"
-    },
-    {
-      icon : FaReact,
-      title : "React js"
-    },
-    {
-      icon : FaC,
-      title : "C lang"
-    },
-    {
-      icon : TbBrandCpp,
-      title : "Cpp"
-    },
-    {
-      icon : FaPython,
-      title : "Python"
-    }
   ]
 
 import gfinder from '../assets/gfinder.png'
@@ -119,11 +91,6 @@ export const projects = [
       Github_url: "https://github.com/uyyalanaveen/portfolio-2",
       Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
     },
-    {
-      title: "GFinderr",
-      img: gfinder,
-      Github_url: "https://github.com/uyyalanaveen/GFinderr",
-      Project_url: "https://g-finder.vercel.app/",
-    },
+
 
   ]
