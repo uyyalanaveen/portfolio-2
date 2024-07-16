@@ -6,13 +6,12 @@ import { interestsData } from '../utils/constants'
 const About = () => {
   return (
     <>
-      <div className='p-16 '>
+      <div className='p-10 md:p-5 mt-7'>
         {/* <div className=''> */}
-        <div className='relative left-10'>
-         <h1 className='text-4xl font-bold '>About______</h1>
-         </div>
-        <div className='flex justify-center gap-2 flex-col items-center mt-6'>
-          <div className='flex justify-between  md:p-10 gap-16 md:w-[80%] flex-col md:flex-row w-full items-center'>
+
+         <h1 className='text-4xl font-bold max-sm:text-center'>About______</h1>
+         
+        <div className='flex justify-center gap-16 flex-col items-center mt-10 md:w-[100%] md:flex-row min-[1025px]:p-10'>
             <img src={profile} alt="" width={200} className='rounded-md' />
             <div className="content w-full flex flex-col gap-3 justify-center items-center md:items-start md:relative bottom-3">
               <h2 className='text-4xl '>Hey there!!</h2>
@@ -21,20 +20,15 @@ const About = () => {
               I believe in the power of collaboration and the magic of creating something amazing together. If you're looking for someone who is eager to bring fresh ideas to the table, work seamlessly in a team, and contribute positively to your projects, let's connect! Together, we can turn visions into reality and embark on exciting new ventures.
               </h2>
             </div>
-          </div>
-          {/* </div> */}
 
         </div>
 
-        <h1 className='text-4xl font-bold relative left-10'>Interest_____</h1>
-        <div className='flex justify-center gap-2 flex-col items-center '>
-          <div className='md:p-4 m-5'>
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10 md:p-5  '>
+        <h1 className='text-4xl font-bold mt-10 max-sm:text-center'>Interest_____</h1>
+        <div className='flex flex-col items-center mt-10'>
+            <div className='grid min-[1025px]:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 md:p-5  '>
               {interestsData.map((data, index) => (
                 <Card src={data.icon} content={data.interest} key={index} />
               ))}
-            </div>
-
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const ContactForm = () => {
     
 
     return (
-        <div className=' justify-center'>
+        <div className='flex justify-center flex-col'>
             <form onSubmit={handleSubmit}
                 className='border-[2px] h-[600px] w-[500px] rounded-lg justify-center flex flex-col items-center gap-[3rem] p-2'>
                 <h1 className='text-3xl font-bold'>Contact me</h1>

@@ -91,6 +91,36 @@ export const projects = [
       Github_url: "https://github.com/uyyalanaveen/portfolio-2",
       Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
     },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
+    {
+      title: "Portfolio",
+      img: portfolio,
+      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
+      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+    },
 
 
   ]
