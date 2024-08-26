@@ -78,6 +78,7 @@ export const navItems = [
 
 import gfinder from '../assets/gfinder.png'
 import portfolio from '../assets/portfolio.png'
+import countryScope from '../assets/CountryScope.png'
 export const projects = [
     {
       title: "GFinderr",
@@ -92,10 +93,10 @@ export const projects = [
       Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
     },
     {
-      title: "Portfolio",
-      img: portfolio,
-      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
-      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
+      title: "Country Scope",
+      img: countryScope,
+      Github_url: "https://github.com/uyyalanaveen/Country-Scope.git",
+      Project_url: "https://country-scope-rho.vercel.app/",
     },
     {
       title: "Portfolio",
