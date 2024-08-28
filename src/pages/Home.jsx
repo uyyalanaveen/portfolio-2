@@ -8,7 +8,7 @@ import { ReactTyped } from 'react-typed';
 
 const Home = () => {
   return (
-    <div className='flex items-center justify-center p-5 mt-[5rem] flex-col'>
+    <div className='flex items-center justify-center p-4 mt-[5rem] flex-col'>
       <div>
         <img src={profile} alt="Navee Uyyala" className='rounded-full w-[250px] h-[250px] max-[600px]:w-[150px] max-[600px]:h-[150px]' />
       </div>
