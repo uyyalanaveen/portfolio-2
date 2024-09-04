@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='flex flex-col gap-16 items-center p-16 '>
       <div className='flex items-center flex-col md:flex-row gap-10'>
-        <h1 className='text-start lg:text-start font-acorn  md:text-7xl  text-7xl lg:text-[9rem] relative left-16'>Lets work together</h1>
+        <h1 className='text-start lg:text-start font-acorn  md:text-7xl  text-7xl lg:text-[9rem] relative left-[-1rem]'>Lets work together</h1>
         <div className=''>
           <ContactForm />
         </div>
@@ -21,7 +21,7 @@ const Contact = () => {
             to={linkData.href}
             target="_blank"
           >
-            <Icon as={linkData.icon} className='text-[2.6rem] hover:text-green-500' />
+            <Icon as={linkData.icon} className='text-[2.6rem] hover:text-violet-700' />
           </Link>
         ))}
       </div>

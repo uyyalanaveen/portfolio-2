@@ -1,6 +1,7 @@
 import { BsCodeSlash } from "react-icons/bs";
 import { TbBrandCpp } from "react-icons/tb";
 import {
+  
   FaHtml5,
   FaCss3,
   FaReact,
@@ -12,13 +13,14 @@ import {
   FaJs,
 } from "react-icons/fa";
 import { FaC } from "react-icons/fa6";
+import { SiPostman } from "react-icons/si";
 
 export const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Skills', path: '/skills' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
   ];
 
   export const socialLinks = [
@@ -74,6 +76,16 @@ export const navItems = [
       icon : FaPython,
       title : "Python"
     },
+    {
+      icon : FaNodeJs,
+      title : "Node js"
+    },
+    {
+      icon : SiPostman,
+      title : "Postman"
+    }
+    
+  
   ]
 
 import gfinder from '../assets/gfinder.png'
@@ -98,30 +110,5 @@ export const projects = [
       Github_url: "https://github.com/uyyalanaveen/Country-Scope.git",
       Project_url: "https://country-scope-rho.vercel.app/",
     },
-    {
-      title: "Portfolio",
-      img: portfolio,
-      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
-      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
-    },
-    {
-      title: "Portfolio",
-      img: portfolio,
-      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
-      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
-    },
-    {
-      title: "Portfolio",
-      img: portfolio,
-      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
-      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
-    },
-    {
-      title: "Portfolio",
-      img: portfolio,
-      Github_url: "https://github.com/uyyalanaveen/portfolio-2",
-      Project_url: "https://portfolio-chi-snowy-31.vercel.app/",
-    },
-
 
   ]

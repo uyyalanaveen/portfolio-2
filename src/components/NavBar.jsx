@@ -1,46 +1,94 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { navItems } from '../utils/constants';
 import { Link } from 'react-router-dom';
 import { X, Menu } from 'lucide-react';
-
+import resumeFile from '../assets/MyResume.pdf';
+import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
 const NavItems = ({ className }) => {
   return (
-      <ul className={`flex flex-row w-full justify-evenly items-center gap-10 md:gap-10 ${className}`}>
-          {navItems.map((item, index) => (
-          <Link key={index} to={item.path}>
-            <div className='text-[1.5rem] hover:text-green-500'>
-              {item.name}
-            </div>
-          </Link>
-        ))}
-      </ul>
+    <ul className={`flex flex-row w-full justify-center gap-10 items-center md:gap-[5rem] ${className}`}>
+      {navItems.map((item, index) => (
+        <Link key={index} to={item.path}>
+          <div className='text-[1.5rem] hover:text-white hover:bg-violet-700 text-black p-2 rounded-md'>
+            {item.name}
+          </div>
+        </Link>
+      ))}
+    </ul>
   );
 };
 
 const NavBar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
+
   return (
-    <div className='md:flex justify-center font-mono py-2 sticky top-0 z-50'>
-      <div className='hidden md:flex w-[67%] h-14 rounded-[50px] justify-center bg-transparent text-white '>
-      <NavItems className={`flex-wrap`} />
+    <div className={`md:flex justify-center font-mono py-2 sticky top-0 z-50 shadow-md ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+      {/* Desktop Navbar */}
+      <div className='hidden md:flex w-[80%] h-14 rounded-[50px] justify-center bg-transparent'>
+        <NavItems />
+        <a
+          href={resumeFile}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex justify-center items-center gap-10 p-3 rounded-md ${darkMode ? 'bg-violet-600 hover:bg-violet-500' : 'bg-violet-700 hover:bg-violet-500'}`}
+          aria-label="View Resume"
+        >
+          <button className='text-white p-3 font-bold text-lg'>Resume</button>
+        </a>
+        <div
+          className={`ml-10 flex justify-center items-center border border-gray-400 p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
+          onClick={toggleDarkMode}
+          aria-label="Toggle Dark Mode"
+        >
+          {darkMode ? <MdLightMode className='text-[2rem]' /> : <MdDarkMode className='text-[2rem]' />}
+        </div>
       </div>
 
-      <div className='md:hidden bg-none p-1'>
-        <button onClick={toggleNavbar}>
-          {isOpen ? <X /> : <Menu className='w-[4rem] h-[2rem] text-white' />}
+      {/* Mobile Navbar */}
+      <div className='md:hidden bg-none p-2'>
+        <button onClick={toggleNavbar} aria-label={isOpen ? 'Close Menu' : 'Open Menu'}>
+          {isOpen ? <X className='w-[2rem] h-[2rem] text-violet-500' /> : <Menu className='w-[2rem] h-[2rem] text-violet-500' />}
         </button>
         {isOpen && (
-          <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-start p-5 z-50 text-white gap-10'>
-            <button onClick={toggleNavbar} className='mb-4'>
-              <X className='w-[2rem] h-[2rem] text-white' />
+          <div className={`fixed top-0 left-0 w-full h-full ${darkMode ? 'bg-gray-900' : 'bg-white'} bg-opacity-95 flex flex-col items-start p-5 z-50 gap-10`}>
+            <button onClick={toggleNavbar} aria-label='Close Menu' className='mb-4'>
+              <X className='w-[2rem] h-[2rem] text-violet-500' />
             </button>
-            <NavItems className='flex-col gap-5' />
+            <NavItems className='flex-col gap-5 w-full' />
+            <a
+              href={resumeFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex justify-center items-center gap-10 p-3 rounded-md ${darkMode ? 'bg-violet-600 hover:bg-violet-500' : 'bg-violet-700 hover:bg-violet-500'}`}
+              aria-label="View Resume"
+            >
+              <button className='text-white p-3 font-bold text-lg'>Resume</button>
+            </a>
+            <div
+              className={`flex justify-center items-center border border-gray-400 p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
+              onClick={toggleDarkMode}
+              aria-label="Toggle Dark Mode"
+            >
+              {darkMode ? <MdLightMode className='text-[2rem]' /> : <MdDarkMode className='text-[2rem]' />}
+            </div>
           </div>
         )}
       </div>
@@ -49,3 +97,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

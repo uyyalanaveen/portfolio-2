@@ -1,19 +1,25 @@
-import React from 'react'
-import SkillCard from '../components/SkillCard'
-import { skills } from '../utils/constants'
+import React from 'react';
+import SkillCard from '../components/SkillCard';
+import { skills } from '../utils/constants';
 
 const Skills = () => {
-    return (
-        <div className='flex flex-col items-center'>
-            <h1 className='text-3xl font-bold relative left-10 mb-10'>Skills_______</h1>
-            <div className='grid min-[1200px]:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-9  min-[1024px]:grid-cols-4 relative left-10'>
-                {skills.map((data, index) => (
-                    <SkillCard icon={data.icon} title={data.title} />
-                ))
-                }
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className='flex flex-col items-center p-4 md:p-8 mt-10'>
+      <h1 className='text-2xl md:text-3xl font-bold mb-8'>
+        Skills
+      </h1>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+        {skills.map((data, index) => (
+          <SkillCard
+            key={index} // Ensure a unique key is provided if data doesn't have a unique id
+            icon={data.icon}
+            title={data.title}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;
+
