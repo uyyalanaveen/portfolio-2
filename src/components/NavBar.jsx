@@ -73,17 +73,8 @@ const NavBar = () => {
               <X className='w-[2rem] h-[2rem] text-violet-500' />
             </button>
             <NavItems className='flex-col gap-5 w-full' />
-            <a
-              href={resumeFile}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex justify-center items-center gap-10 p-3 rounded-md ${darkMode ? 'bg-violet-600 hover:bg-violet-500' : 'bg-violet-700 hover:bg-violet-500'}`}
-              aria-label="View Resume"
-            >
-              <button className='text-white p-3 font-bold text-lg'>Resume</button>
-            </a>
             <div
-              className={`flex justify-center items-center border border-gray-400 p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
+              className={`absolute flex border border-gray-400 p-3 rounded-full left-[80%] ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
               onClick={toggleDarkMode}
               aria-label="Toggle Dark Mode"
             >

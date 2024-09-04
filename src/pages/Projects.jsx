@@ -8,8 +8,8 @@ const Projects = () => {
       <h1 className='text-3xl md:text-4xl font-bold text-center mt-10'>
         Projects
       </h1>
-      <div className='grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:gap-12'>
-        {projects.map((project,index) => (
+      <div className='grid grid-cols-1 gap-6 sm:gap-8 mt-8 md:grid-cols-2 md:gap-12'>
+        {projects.map((project, index) => (
           <ProjectCard
             key={index}
             img={project.img}
@@ -24,4 +24,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
