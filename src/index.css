@@ -1,46 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Righteous&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
-body
-{
-  font-family: 'Poppins';
-  background: #fff;
-  color: #00000;
-}
-.name{
-  font-family: 'Black Ops One';
-  /* font-size: 79.2px; */
-  
-}
+
 body {
-  background-color: #ffffff;
-  color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Dark mode styles */
-/* body.dark-mode { */
-/*   background-color: #121212; */
-/*   color: #e0e0e0; */
-/* } */
-/**/
-/* .dark-mode .bg-white { */
-/*   background-color: #1e1e1e; */
-/* } */
-/**/
-/* .dark-mode .text-black { */
-/*   color: #e0e0e0; */
-/* } */
-/**/
-/* .dark-mode .bg-violet-700 { */
-/*   background-color: #6d28d9; */
-/* } */
-/**/
-/* .dark-mode .hover\:bg-violet-500:hover { */
-/*   background-color: #4c1d95; */
-/* } */
+.name {
+  font-family: 'Black Ops One', cursive;
+}
+
