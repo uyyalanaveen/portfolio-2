@@ -5,12 +5,12 @@ import { X, Menu } from 'lucide-react';
 import resumeFile from '../assets/MyResume.pdf';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
-const NavItems = ({ className }) => {
+const NavItems = ({ className, onItemClick }) => {
   return (
-    <ul className={`flex flex-row w-full justify-center gap-10 items-center md:gap-[5rem] ${className}`}>
+    <ul className={`flex flex-row w-full justify-center gap-10 items-center md:gap-[5rem] ${className} `}>
       {navItems.map((item, index) => (
-        <Link key={index} to={item.path}>
-          <div className='text-[1.5rem] hover:text-white hover:bg-violet-700 text-black p-2 rounded-md'>
+        <Link key={index} to={item.path} onClick={onItemClick}>
+          <div className='text-[1.2rem] hover:text-white hover:bg-violet-700 text-black p-2 rounded-md'>
             {item.name}
           </div>
         </Link>
@@ -40,18 +40,18 @@ const NavBar = () => {
   }, [darkMode]);
 
   return (
-    <div className={`md:flex justify-center font-mono py-2 sticky top-0 z-50 shadow-md ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className={`md:flex justify-center font-mono py-2 sticky top-0 z-50`}>
       {/* Desktop Navbar */}
-      <div className='hidden md:flex w-[80%] h-14 rounded-[50px] justify-center bg-transparent'>
+      <div className='hidden md:flex w-[80%] h-14 rounded-[50px] justify-center'>
         <NavItems />
         <a
           href={resumeFile}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex justify-center items-center gap-10 p-3 rounded-md ${darkMode ? 'bg-violet-600 hover:bg-violet-500' : 'bg-violet-700 hover:bg-violet-500'}`}
+          className={`flex justify-center items-center gap-10 p-1 rounded-md ${darkMode ? 'bg-violet-600 hover:bg-violet-500' : 'bg-violet-700 hover:bg-violet-500'}`}
           aria-label="View Resume"
         >
-          <button className='text-white p-3 font-bold text-lg'>Resume</button>
+          <button className='text-white p-1  font-bold text-md'>Resume</button>
         </a>
         <div
           className={`ml-10 flex justify-center items-center border border-gray-400 p-3 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
@@ -72,7 +72,7 @@ const NavBar = () => {
             <button onClick={toggleNavbar} aria-label='Close Menu' className='mb-4'>
               <X className='w-[2rem] h-[2rem] text-violet-500' />
             </button>
-            <NavItems className='flex-col gap-5 w-full' />
+            <NavItems className='flex-col gap-5 w-full' onItemClick={toggleNavbar} />
             <div
               className={`absolute flex border border-gray-400 p-3 rounded-full left-[80%] ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-transparent hover:bg-violet-500'}`}
               onClick={toggleDarkMode}

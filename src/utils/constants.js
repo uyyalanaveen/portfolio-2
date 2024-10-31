@@ -40,9 +40,14 @@ export const navItems = [
       icon: BsCodeSlash,
     },
     {
-      interest: "IoT",
+      interest: "Linux",
       icon: BsCodeSlash,
     },
+    {
+      interest: "DSA",
+      icon: BsCodeSlash,
+    },
+
     
     
   ];
@@ -89,7 +94,7 @@ export const navItems = [
   ]
 
 import gfinder from '../assets/gfinder.png'
-import portfolio from '../assets/portfolio.png'
+import portfolio from '../assets/port.png'
 import countryScope from '../assets/CountryScope.png'
 export const projects = [
     {

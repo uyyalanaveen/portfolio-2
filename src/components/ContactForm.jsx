@@ -21,9 +21,9 @@ const ContactForm = () => {
 
 
   return (
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col '>
     <form onSubmit={handleSubmit}
-    className='border-[2px] border-gray-400 h-[600px] w-[500px] rounded-lg justify-center flex flex-col items-center gap-[3rem] p-2'>
+    className='border-[2px] border-gray-400 h-[600px] lg:w-[500px] rounded-lg justify-center flex flex-col items-center gap-[3rem] p-2 overflow-hidden'>
     <h1 className='text-3xl font-bold'>Contact me</h1>
     <div className='w-3/4 h-10 '>
     <label htmlFor="name" className='text-lg opacity-50 '>Name:</label>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <div className='flex flex-col gap-16 items-center p-16 '>
+    <div className='flex flex-col gap-16 items-center p-16 overflow-hidden'>
       <div className='flex items-center flex-col md:flex-row gap-10'>
         <h1 className='text-start lg:text-start font-acorn  md:text-7xl  text-7xl lg:text-[9rem] relative left-[-1rem]'>Lets work together</h1>
         <div className=''>

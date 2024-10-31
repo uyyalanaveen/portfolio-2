@@ -24,23 +24,23 @@ body {
 }
 
 /* Dark mode styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-.dark-mode .bg-white {
-  background-color: #1e1e1e;
-}
-
-.dark-mode .text-black {
-  color: #e0e0e0;
-}
-
-.dark-mode .bg-violet-700 {
-  background-color: #6d28d9;
-}
-
-.dark-mode .hover\:bg-violet-500:hover {
-  background-color: #4c1d95;
-}
+/* body.dark-mode { */
+/*   background-color: #121212; */
+/*   color: #e0e0e0; */
+/* } */
+/**/
+/* .dark-mode .bg-white { */
+/*   background-color: #1e1e1e; */
+/* } */
+/**/
+/* .dark-mode .text-black { */
+/*   color: #e0e0e0; */
+/* } */
+/**/
+/* .dark-mode .bg-violet-700 { */
+/*   background-color: #6d28d9; */
+/* } */
+/**/
+/* .dark-mode .hover\:bg-violet-500:hover { */
+/*   background-color: #4c1d95; */
+/* } */
